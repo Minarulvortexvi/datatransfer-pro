@@ -1,0 +1,29 @@
+{
+  "login": {
+    "title": "Login to DataTransfer",
+    "signInWithDropbox": "Sign in with Dropbox"
+  },
+  "transfer": {
+    "title": "Transfer Files",
+    "authRequired": "Please sign in to start a transfer",
+    "dropzone": {
+      "active": "Drop files here",
+      "idle": "Drag and drop files or click to select",
+      "uploading": "Uploading...",
+      "error": "Upload failed"
+    },
+    "qr": {
+      "title": "Scan to Receive Transfer",
+      "download": "Download File"
+    },
+    "status": {
+      "title": "Transfer Status",
+      "label": "Status",
+      "invalid": "Invalid Transfer ID"
+    },
+    "receive": {
+      "title": "Receive Transfer",
+      "loading": "Loading file data..."
+    }
+  }
+}
