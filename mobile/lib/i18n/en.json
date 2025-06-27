@@ -1,0 +1,31 @@
+{
+  "login": {
+    "title": "Login to DataTransfer",
+    "signInWithDropbox": "Sign in with Dropbox"
+  },
+  "transfer": {
+    "title": "Transfer Files",
+    "authRequired": "Please sign in to start a transfer",
+    "qr": {
+      "title": "Scan to Receive Transfer",
+      "download": "Download File"
+    },
+    "status": {
+      "title": "Transfer Status",
+      "invalid": "Invalid Transfer ID"
+    },
+    "receive": {
+      "title": "Receive Transfer",
+      "loading": "Loading file data...",
+      "saved": "File saved to: "
+    }
+  },
+  "filePicker": {
+    "select": "Select File",
+    "error": "Failed to pick file"
+  },
+  "home": {
+    "title": "Welcome to DataTransfer.dev",
+    "startTransfer": "Start Transfer"
+  }
+}
