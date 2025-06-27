@@ -1,0 +1,57 @@
+openapi: 3.0.3
+info:
+  title: DataTransfer API
+  version: 1.0.0
+paths:
+  /transfer/start:
+    post:
+      summary: Initiate a file transfer
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                provider:
+                  type: string
+                  enum: [dropbox]
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Transfer initiated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transferId:
+                    type: string
+                  sharedLink:
+                    type: string
+  /transfer/status/{transferId}:
+    get:
+      summary: Get transfer status
+      parameters:
+        - name: transferId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Transfer status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  sharedLink:
+                    type: string
+                  filePath:
+                    type: string
